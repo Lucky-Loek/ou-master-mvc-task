@@ -72,6 +72,13 @@ when you are done. Now is a good time to start verbalizing your thought processe
 
 ## Task
 
+### Part 1
+
+The researcher will ask you some questions. Please answer them to the best of your ability. If you have trouble
+answering one of the questions, or feel like you don't know the answer, say so.
+
+### Part 2
+
 Your task is to show the average grade for an O.W.L. according to the Model-View-Controller design pattern.
 
 You have a maximum of 20 minutes to spend on the task. It is okay if you cannot finish. You are not graded and your work

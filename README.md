@@ -11,7 +11,7 @@ run all commands from inside WSL to ensure that Docker and Sail don't randomly b
 Run from inside WSL.
 
 ```shell script
-$ git clone project-git-ssh-url
+$ git clone project-git-url
 ```
 
 ### 2. cd into your project
@@ -63,10 +63,16 @@ $ ./vendor/bin/sail php artisan migrate --seed
 
 In your favorite browser, browse to `http://localhost`
 
+## Reacquiring acquintance with Laravel
+
+Before you start the task below, there is a small bug that needs fixing: the O.W.L.s page shows all O.W.L.s in
+ascending order; from earliest date to latest date. This needs to be changed to descending order: from latest date to
+earliest date. You don't need to commit or push anything. Just make the required change and let the researcher know
+when you are done. Now is a good time to start verbalizing your thought processes.
+
 ## Task
 
-Your task is to show the average grade for an O.W.L. according to the Model-View-Controller design pattern. If you
-are not sure which view to use, pick the `show` view for an `Owl`.
+Your task is to show the average grade for an O.W.L. according to the Model-View-Controller design pattern.
 
 You have a maximum of 20 minutes to spend on the task. It is okay if you cannot finish. You are not graded and your work
 will only be used to gather data for research. Remember to verbalize your thought processes so that the researcher can

@@ -12,7 +12,7 @@ class OwlController extends Controller
 {
     public function index()
     {
-        $owls = Owl::orderBy('scheduled_at', 'desc')->get();
+        $owls = Owl::orderBy('scheduled_at', 'asc')->get();
 
         return view('owls.index', compact('owls'));
     }

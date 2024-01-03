@@ -24,7 +24,7 @@
                 </div>
 
                 <pre>
-                    @dd(array_reduce($owl->grades, function($carry, $item) { $carry += $item->mark; return $carry; }))
+                    @dd($average_grade)
                 </pre>
             </div>
         </div>

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Owl extends Model
 {
@@ -24,7 +25,7 @@ class Owl extends Model
         return $this->hasMany(Grade::class);
     }
 
-    protected function firstName(): Attribute
+    public function averageGrade(): Attribute
     {
         return Attribute::make(
             get: fn (string $value) => ucfirst($value),

@@ -23,4 +23,10 @@ class Owl extends Model
     {
         return $this->hasMany(Grade::class);
     }
+
+    public function averageGrade(): float
+    {
+        $grades = $this->grades->pluck('mark');
+        return $grades->count() > 0 ? $grades->avg() : 0;
+    }
 }

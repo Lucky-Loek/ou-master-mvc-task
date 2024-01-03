@@ -13,7 +13,7 @@ class OwlController extends Controller
     public function index()
     {
         $owls = Owl::orderBy('scheduled_at', 'asc')->get();
-
+        dd($owls[0]->grades);
         return view('owls.index', compact('owls'));
     }
 

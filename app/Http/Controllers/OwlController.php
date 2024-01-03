@@ -22,8 +22,7 @@ class OwlController extends Controller
         $sum_of_grades = 0;
 
         foreach ($owl->grades as $grade) {
-            dd($grade);
-            $sum_of_grades = $sum_of_grades + $grade;
+            $sum_of_grades = $sum_of_grades + $grade->mark;
         }
 
         dd($sum_of_grades);

@@ -35,7 +35,7 @@
                                         {{ $owl->name }}
                                         </a>
                                     </td>
-                                    <td>{{ $owl->grades->mark }}</td>
+                                    <td>{{ $owl->averageGrade(), 2 }}</td>
                                     <td><span class="tag">{{ $owl->version_nr }}</span></td>
                                     <td>{{ $owl->scheduled_at->toDayDateTimeString() }}</td>
                                 </tr>

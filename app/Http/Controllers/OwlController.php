@@ -19,7 +19,7 @@ class OwlController extends Controller
         $average = $gradesSum / $gradeCount;
         dd($average);
         return view('owls.index', [
-            'owls' => $owl,
+            'owls' => $owls,
             'average' => $average
         ]);
     }

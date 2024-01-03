@@ -19,4 +19,9 @@ class Grade extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function allGrades()
+    {
+        return $this->count();
+    }
 }

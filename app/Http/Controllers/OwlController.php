@@ -14,14 +14,16 @@ class OwlController extends Controller
     {
         $owls = Owl::orderBy('scheduled_at', 'asc')->get();
 
-        return view('owls.index', compact('owls'));
+        return view('owls.index', [
+            'owls' => $owl,
+            'average' => $average
+        ]);
     }
 
     public function show(Owl $owl)
     {
         return view('owls.show', [
-            'owl' => $owl,
-            'average' => $average,
+            'owl' => $owl
         ]);
     }
 }

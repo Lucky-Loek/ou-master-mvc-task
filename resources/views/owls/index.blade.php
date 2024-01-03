@@ -35,6 +35,7 @@
                                         {{ $owl->name }}
                                         </a>
                                     </td>
+                                    <td></td>
                                     <td><span class="tag">{{ $owl->version_nr }}</span></td>
                                     <td>{{ $owl->scheduled_at->toDayDateTimeString() }}</td>
                                 </tr>

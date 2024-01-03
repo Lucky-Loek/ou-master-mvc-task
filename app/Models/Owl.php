@@ -23,4 +23,11 @@ class Owl extends Model
     {
         return $this->hasMany(Grade::class);
     }
+
+    protected function firstName(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucfirst($value),
+        );
+    }
 }

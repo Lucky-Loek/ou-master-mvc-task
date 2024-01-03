@@ -21,6 +21,7 @@
                             <tr>
                                 <th style="width: 5%">ID</th>
                                 <th style="width: 60%">Name</th>
+                                <th>Average Grade</th>
                                 <th style="width: 10%">Version</th>
                                 <th style="width: 25%">Scheduled</th>
                             </tr>
@@ -34,6 +35,7 @@
                                         {{ $owl->name }}
                                         </a>
                                     </td>
+                                    <td>{{ $owl->averageGrade }}</td>
                                     <td><span class="tag">{{ $owl->version_nr }}</span></td>
                                     <td>{{ $owl->scheduled_at->toDayDateTimeString() }}</td>
                                 </tr>

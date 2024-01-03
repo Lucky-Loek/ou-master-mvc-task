@@ -22,6 +22,8 @@
                         <p><strong>Grades</strong> {{ $owl->grades }}</p>
                     </div>
                 </div>
+
+                <pre>{{ $owl->grades }}</pre>
             </div>
         </div>
     </section>

@@ -19,6 +19,7 @@
                         <p><strong>Points:</strong> {{ $owl->version_nr }}</p>
                         <p><strong>Color:</strong> {{ $owl->scheduled_at }}</p>
                         <p><strong>Topics:</strong> {{ $owl->topics }}</p>
+                        <p><strong>Grades</strong> {{ $owl->graes() }}</p>
                     </div>
                 </div>
             </div>

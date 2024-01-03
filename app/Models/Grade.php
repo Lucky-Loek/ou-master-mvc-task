@@ -22,6 +22,6 @@ class Grade extends Model
 
     public function allGrades()
     {
-        return $this->count();
+        return $this::all();
     }
 }

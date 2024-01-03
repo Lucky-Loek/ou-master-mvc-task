@@ -38,6 +38,10 @@
                                     <td>{{ $owl->scheduled_at->toDayDateTimeString() }}</td>
                                 </tr>
                             @endforeach
+                            <tr>
+                                <td><b>Average</b></td>
+                                <td>{{$average}}</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

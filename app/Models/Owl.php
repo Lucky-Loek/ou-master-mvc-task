@@ -28,7 +28,7 @@ class Owl extends Model
     public function averageGrade(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => ucfirst($value),
+            get: fn () => DB::table('your_table')->avg('star'),
         );
     }
 }

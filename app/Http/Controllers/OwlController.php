@@ -14,9 +14,9 @@ class OwlController extends Controller
     public function index()
     {
         $owls = Owl::orderBy('scheduled_at', 'asc')->get();
-        $grades = Grade::all()->sum('mark');
+        $gradesSum = Grade::all()->sum('mark');
         $gradeCount = Grade::all()->count();
-        // $average = $grades->count()/$owls->count();
+        $average = $gradesSum / $gradeCount;
         return view('owls.index', [
             'owls' => $owl,
             'average' => $average

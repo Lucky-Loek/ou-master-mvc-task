@@ -25,7 +25,7 @@ class OwlController extends Controller
             $sum_of_grades = $sum_of_grades + $grade->mark;
         }
 
-        dd($sum_of_grades);
+        dd($sum_of_grades / count($owl->grades));
         return view('owls.show', [
             'owl' => $owl
         ]);

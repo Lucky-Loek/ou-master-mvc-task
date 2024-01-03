@@ -24,7 +24,7 @@
                 </div>
 
                 <pre>
-                    @dd($average_grade)
+                        {{ $average_grade }}
                 </pre>
             </div>
         </div>

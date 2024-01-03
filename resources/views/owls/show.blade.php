@@ -23,7 +23,10 @@
                     </div>
                 </div>
 
-                <pre>{{ $owl->grades }}</pre>
+                <pre>
+                    @dd($owl->grades)
+                    {{  }}
+                </pre>
             </div>
         </div>
     </section>

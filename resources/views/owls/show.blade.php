@@ -19,7 +19,7 @@
                         <p><strong>Points:</strong> {{ $owl->version_nr }}</p>
                         <p><strong>Color:</strong> {{ $owl->scheduled_at }}</p>
                         <p><strong>Topics:</strong> {{ $owl->topics }}</p>
-                        <p><strong>AverageGrade:</strong> {{ $owl->averageGrades }}</p>
+                        <p><strong>AverageGrade:</strong> {{ $owl->averageGrades() }}</p>
                     </div>
                 </div>
             </div>

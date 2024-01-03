@@ -22,6 +22,10 @@ class Owl extends Model
     public function grades(): HasMany
     {
         return $this->hasMany(Grade::class);
-        return $
+    }
+
+    public function grades(): AverageGrade
+    {
+        return $this->Average(Grade::class);
     }
 }

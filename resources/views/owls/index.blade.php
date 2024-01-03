@@ -21,6 +21,7 @@
                             <tr>
                                 <th style="width: 5%">ID</th>
                                 <th style="width: 60%">Name</th>
+                                <th style="width: 10%">Grade</th>
                                 <th style="width: 10%">Version</th>
                                 <th style="width: 25%">Scheduled</th>
                             </tr>

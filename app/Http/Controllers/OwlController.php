@@ -17,6 +17,7 @@ class OwlController extends Controller
         $gradesSum = Grade::all()->sum('mark');
         $gradeCount = Grade::all()->count();
         $average = $gradesSum / $gradeCount;
+        dd($average);
         return view('owls.index', [
             'owls' => $owl,
             'average' => $average

@@ -24,7 +24,7 @@
                 </div>
 
                 <pre>
-                    @dd($owl->grades[0].mark)
+                    @dd($owl->grades[0]->mark)
                     {{  }}
                 </pre>
             </div>

@@ -19,6 +19,8 @@ class OwlController extends Controller
 
     public function show(Owl $owl)
     {
+        $sum_of_grades = $owl->grades;
+        dd($sum_of_grades);
         return view('owls.show', [
             'owl' => $owl
         ]);

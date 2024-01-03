@@ -20,7 +20,8 @@ class OwlController extends Controller
     public function show(Owl $owl)
     {
         return view('owls.show', [
-            'owl' => $owl
+            'owl' => $owl,
+            'average' => $average,
         ]);
     }
 }
